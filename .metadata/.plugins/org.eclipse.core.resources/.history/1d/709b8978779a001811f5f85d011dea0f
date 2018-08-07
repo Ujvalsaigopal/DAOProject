@@ -1,0 +1,31 @@
+package DAO;
+
+import java.util.*;
+import java.util.ArrayList;
+
+import Model.Employee;
+
+public class DAOimplementation implements DAOInterface {
+	
+	List<Employee> empArrList = new ArrayList<>();
+	
+	@Override
+	public Employee DAOinsert(Employee serviceTempEmp) {
+		empArrList.add(serviceTempEmp);
+		return serviceTempEmp;
+	}
+
+	@Override
+	public String DAOfindbyID(String tempEmpID) {
+		if(tempEmpID = 10){
+			System.out.println("Ujval");			
+		}else {
+			System.out.println("No Employee on this ID");
+		}
+		
+		return null;
+	}
+	
+		
+	}
+
