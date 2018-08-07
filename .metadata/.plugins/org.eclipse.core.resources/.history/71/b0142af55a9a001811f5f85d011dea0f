@@ -1,0 +1,15 @@
+package DAO;
+
+import Model.Employee;
+
+public class DAOimplementation implements DAOInterface {
+
+	@Override
+	public Employee DAOinsert(Employee emp) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+		
+	}
+

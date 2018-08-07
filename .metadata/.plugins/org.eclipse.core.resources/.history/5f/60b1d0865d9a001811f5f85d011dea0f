@@ -1,0 +1,11 @@
+package Main;
+
+import Service.ServiceImplementation;
+import Service.ServiceInterface;
+
+public class MainImplementation implements Maininterface {
+	ServiceInterface serviceinterface  =  new ServiceImplementation();
+	public static void main(String[] args){
+		ServiceImplementation.addEmployee();
+	}
+}

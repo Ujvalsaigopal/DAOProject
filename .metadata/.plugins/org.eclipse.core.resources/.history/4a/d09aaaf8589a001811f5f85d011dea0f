@@ -1,0 +1,15 @@
+package Service;
+
+import DAO.DAOInterface;
+import DAO.DAOimplementation;
+
+public class ServiceImplementation implements ServiceInterface{
+private DAOInterface dao;
+
+public ServiceImplementation() {
+	super();
+	this.dao = new DAOimplementation();
+}
+
+}
+

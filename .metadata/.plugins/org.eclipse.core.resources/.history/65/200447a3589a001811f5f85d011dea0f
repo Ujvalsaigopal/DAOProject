@@ -1,0 +1,20 @@
+package Utilities;
+
+import java.util.Scanner;
+
+import Model.Employee;
+
+public class ServiceUtilities {
+	Employee emp= null;
+public static Employee CollectInfo_add()
+	{	
+	Scanner sc= new Scanner(System.in);
+	System.out.println("Enter Employee ID:");
+	String val1 = sc.nextLine();
+	System.out.println("Enter Employee Name:");
+	String val2 = sc.nextLine();
+	Employee tempEmp = new Employee(val1, val2);
+	return tempEmp;
+	
+}
+}

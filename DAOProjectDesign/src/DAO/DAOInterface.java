@@ -1,5 +1,7 @@
 package DAO;
 
-public interface DAOInterface {
+import Model.Employee;
 
+public interface DAOInterface {
+public Employee DAOinsert(Employee emp); 
 }
