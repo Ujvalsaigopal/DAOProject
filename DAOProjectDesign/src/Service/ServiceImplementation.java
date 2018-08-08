@@ -27,5 +27,19 @@ public String displayName() {
 	return tempName;
 }
 
+@Override
+public String deleteID() {
+	String tempdelID = ServiceUtilities.DeleteempbyID();
+	String tempdelemp = dao.DAOdeleID(tempdelID);
+	return tempdelemp;
+}
+
+@Override
+public String updateID() {
+	String tempupdateID = ServiceUtilities.UpdatebyID();
+	String tempupdateemp = dao.DAOupdateID(tempupdateID);
+	return tempupdateemp;
+}
+
 }
 

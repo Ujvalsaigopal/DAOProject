@@ -12,6 +12,8 @@ public class MainImplementation implements Maininterface {
 		MainImplementation mainImplementation = new MainImplementation();
 		mainImplementation.addEmpMain();
 		mainImplementation.displayByID();
+		mainImplementation.delebyID();
+		mainImplementation.updatebyID();
 	}
 
 	private void addEmpMain() {
@@ -23,5 +25,13 @@ public class MainImplementation implements Maininterface {
 	private void displayByID() {
 		String displayEmpname = serviceinterface.displayName();
 		System.out.println(displayEmpname);
+	}
+	private void delebyID(){
+		String deletebyID = serviceinterface.deleteID();
+		System.out.println(deletebyID);
+	}
+	private void updatebyID(){
+		String ubyID = serviceinterface.updateID();
+		System.out.println(ubyID);
 	}
 }

@@ -23,4 +23,17 @@ public class ServiceUtilities {
 		String tempID = sd.next();
 		return tempID;
 	}
+	public static String DeleteempbyID(){
+		Scanner se = new Scanner(System.in);
+		System.out.println("ID:");
+		String teempdID = se.next();
+		return teempdID;
+		
+	}
+	public static String UpdatebyID(){
+		Scanner s = new Scanner(System.in);
+		System.out.println("ID You want to Update");
+		String tempempUpdateID = s.nextLine();
+		return tempempUpdateID;
+	}
 }
